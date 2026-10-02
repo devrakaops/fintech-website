@@ -27,7 +27,7 @@ const StatCard = ({ stat, index }) => {
   return (
     <div
       ref={ref}
-      className="rounded-2xl border border-ink/[0.08] bg-paper-2 p-5 shadow-[0_2px_24px_rgba(12,14,18,0.04)] sm:p-6"
+      className="rounded-2xl border border-ink/[0.08] bg-paper-2 p-5 sm:p-6"
       data-testid={`stat-card-${index}`}
     >
       <p className="font-serif text-3xl tracking-tight text-ink sm:text-4xl">
@@ -44,7 +44,7 @@ export const About = () => {
   const { about, images } = siteContent;
 
   return (
-    <section id={about.id} className="bg-paper py-24 md:py-32" data-testid="about-section">
+    <section id={about.id} className="bg-paper py-28 md:py-36" data-testid="about-section">
       <div className="container-x grid gap-14 lg:grid-cols-2 lg:gap-20">
         {/* left — narrative */}
         <div>
@@ -61,7 +61,7 @@ export const About = () => {
           </Reveal>
 
           <Reveal delay={0.28}>
-            <blockquote className="mt-8 border-l-2 border-gold pl-6">
+            <blockquote className="mt-10 border-l-2 border-gold pl-6">
               <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dark">
                 {about.philosophy.label}
               </p>
@@ -72,7 +72,7 @@ export const About = () => {
           </Reveal>
 
           <Reveal delay={0.36}>
-            <ul className="mt-8 space-y-3">
+            <ul className="mt-10 space-y-3">
               {about.credentials.map((c, i) => (
                 <li key={i} className="flex items-center gap-3 text-sm font-medium text-ink/75">
                   <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold/15">
@@ -98,7 +98,7 @@ export const About = () => {
               <img
                 src={images.about}
                 alt="Advisory office"
-                className="h-64 w-full object-cover sm:h-80"
+                className="aspect-[16/10] w-full object-cover"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-transparent" />
@@ -112,14 +112,14 @@ export const About = () => {
             {[about.founders[0], about.founders[1]].map((f, i) => (
               <Reveal key={i} delay={0.2 + i * 0.12} className="h-full">
                 <div
-                  className="group h-full overflow-hidden rounded-3xl border border-ink/[0.08] bg-paper-2 shadow-[0_2px_24px_rgba(12,14,18,0.04)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_16px_48px_rgba(12,14,18,0.1)]"
+                  className="group h-full overflow-hidden rounded-2xl border border-ink/[0.08] bg-paper-2"
                   data-testid={`founder-card-${i + 1}`}
                 >
                   <div className="overflow-hidden">
                     <img
                       src={i === 0 ? images.founderOne : images.founderTwo}
                       alt={f.name}
-                      className="aspect-[4/5] w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                      className="aspect-[4/5] w-full object-cover"
                       loading="lazy"
                     />
                   </div>

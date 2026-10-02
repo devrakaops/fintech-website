@@ -8,8 +8,7 @@ export const Approach = () => {
   const { approach } = siteContent;
 
   return (
-    <section id={approach.id} className="relative bg-ink py-24 md:py-32" data-testid="approach-section">
-      <div className="pointer-events-none absolute right-0 top-0 h-[420px] w-[420px] rounded-full bg-gold/[0.05] blur-[130px]" />
+    <section id={approach.id} className="relative bg-ink py-28 md:py-36" data-testid="approach-section">
       <div className="container-x">
         <SectionHeading
           eyebrow={approach.eyebrow}
@@ -24,7 +23,7 @@ export const Approach = () => {
             return (
               <Reveal key={step.number} delay={i * 0.1} className="h-full">
                 <div
-                  className="group relative h-full rounded-3xl border border-white/[0.07] bg-ink-2 p-8 transition-all duration-500 hover:-translate-y-2 hover:border-gold/35 hover:shadow-[0_20px_60px_rgba(0,0,0,0.4)]"
+                  className="group relative h-full rounded-2xl border border-white/[0.07] bg-ink-2 p-8 transition-colors duration-500 hover:border-gold/30"
                   data-testid={`approach-card-${i + 1}`}
                 >
                   <div className="flex items-start justify-between">
@@ -41,7 +40,6 @@ export const Approach = () => {
                   <p className="mt-4 text-sm leading-relaxed text-white/55">
                     {step.description}
                   </p>
-                  <span className="absolute inset-x-8 bottom-0 h-px origin-left scale-x-0 bg-gradient-to-r from-gold/50 to-transparent transition-transform duration-500 group-hover:scale-x-100" />
                 </div>
               </Reveal>
             );

@@ -75,7 +75,7 @@ export const Contact = () => {
   ];
 
   return (
-    <section id={contact.id} className="bg-paper py-24 md:py-32" data-testid="contact-section">
+    <section id={contact.id} className="bg-paper py-28 md:py-36" data-testid="contact-section">
       <div className="container-x grid gap-14 lg:grid-cols-2 lg:gap-20">
         {/* left — CTA + methods */}
         <div>
@@ -93,11 +93,11 @@ export const Contact = () => {
                   href={m.href}
                   target={m.external ? "_blank" : undefined}
                   rel={m.external ? "noopener noreferrer" : undefined}
-                  className="group flex items-center justify-between gap-4 rounded-2xl border border-ink/[0.08] bg-paper-2 p-5 transition-all duration-500 hover:-translate-y-0.5 hover:border-gold/40 hover:shadow-[0_14px_44px_rgba(160,126,59,0.12)] sm:p-6"
+                  className="group flex items-center justify-between gap-4 rounded-2xl border border-ink/[0.08] bg-paper-2 p-5 transition-colors duration-500 hover:border-gold/40 sm:p-6"
                   data-testid={m.testid}
                 >
                   <div className="flex items-center gap-4">
-                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gold/[0.1] text-gold-dark transition-colors duration-500 group-hover:bg-gold group-hover:text-ink">
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gold/[0.1] text-gold-dark transition-colors duration-500 group-hover:bg-gold/15">
                       <m.icon className="h-5 w-5" strokeWidth={1.5} />
                     </span>
                     <div>
@@ -130,7 +130,7 @@ export const Contact = () => {
         {/* right — enquiry form */}
         <Reveal delay={0.2}>
           <div
-            className="rounded-3xl border border-ink/[0.08] bg-paper-2 p-7 shadow-[0_4px_40px_rgba(12,14,18,0.06)] sm:p-9"
+            className="rounded-2xl border border-ink/[0.08] bg-paper-2 p-7 shadow-[0_2px_24px_rgba(12,14,18,0.04)] sm:p-9"
             data-testid="enquiry-form-card"
           >
             <h3 className="font-serif text-2xl tracking-tight text-ink">
@@ -201,7 +201,7 @@ export const Contact = () => {
 
               <button
                 type="submit"
-                className="group flex w-full items-center justify-center gap-2.5 rounded-full bg-gold px-7 py-4 text-sm font-semibold text-ink transition-all duration-300 hover:bg-gold-light hover:shadow-[0_8px_40px_rgba(197,160,89,0.35)]"
+                className="group flex w-full items-center justify-center gap-2.5 rounded-full bg-gold px-7 py-4 text-sm font-semibold text-ink transition-colors duration-300 hover:bg-gold-light"
                 data-testid="enquiry-submit-button"
               >
                 <MessageCircle className="h-4 w-4" />

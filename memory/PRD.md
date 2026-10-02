@@ -24,6 +24,9 @@ Build a premium, modern, fully responsive STATIC single-page website for a bouti
 - Footer: brand, quick links, contact, socials, editable disclaimer, copyright.
 - Fully responsive 390px→desktop, no horizontal scroll, data-testids on all interactive elements.
 
+## Implemented (2026-10-02, refinement pass)
+- Premium refinement without changing functionality: reduced animations (removed scroll-driven fade, journey parallax, hover lifts/glows, logo rotate, card image zoom), removed gold blur orbs and gradient sweeps, unified all cards to rounded-2xl with flat borders and whisper shadows, consistent pill buttons (no glow shadows), increased section whitespace (py-28/md:py-36, hero pt-44/pb-32), stronger type hierarchy (hero clamp up to 6rem), quieter marquee (72s, muted), calmer hero/journey backdrops (opacity 30/20), stable about image crop (aspect 16/10), tightened logo lockup, neutral scrollbar.
+
 ## Implemented (2026-10-02)
 - Full config-driven site (all sections above) with framer-motion reveals + lenis smooth scroll + parallax hero/journey + slow marquee + count-up stats.
 - Original SVG brand mark (meridian globe) as inline logo + favicon; logo swap supported via config.

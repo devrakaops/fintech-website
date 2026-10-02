@@ -46,7 +46,7 @@ export const Navbar = () => {
         <div className="container-x flex items-center justify-between">
           <Logo onClick={(e) => go(e, "#top")} />
 
-          <nav className="hidden items-center gap-9 lg:flex">
+          <nav className="hidden items-center gap-8 lg:flex">
             {nav.links.map((link) => (
               <a
                 key={link.href}

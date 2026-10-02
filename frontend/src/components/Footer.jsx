@@ -14,12 +14,12 @@ export const Footer = () => {
       {/* giant watermark */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 bottom-0 select-none text-center font-serif text-[22vw] italic leading-[0.75] text-white/[0.025]"
+        className="pointer-events-none absolute inset-x-0 bottom-0 select-none text-center font-serif text-[22vw] italic leading-[0.75] text-white/[0.02]"
       >
         {brand.shortName}
       </div>
 
-      <div className="container-x relative z-10 pb-10 pt-20 md:pt-28">
+      <div className="container-x relative z-10 pb-10 pt-24 md:pt-32">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1.2fr_1fr]">
           <div>
             <Logo />

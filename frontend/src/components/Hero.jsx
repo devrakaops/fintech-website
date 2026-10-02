@@ -18,7 +18,6 @@ export const Hero = () => {
     offset: ["start start", "end start"],
   });
   const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "22%"]);
-  const contentFade = useTransform(scrollYProgress, [0, 0.75], [1, 0]);
 
   return (
     <section
@@ -31,18 +30,16 @@ export const Hero = () => {
         <img
           src={images.hero}
           alt=""
-          className="h-full w-full object-cover opacity-40"
+          className="h-full w-full object-cover opacity-30"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/55 to-ink" />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ink/60 via-ink/45 to-ink" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/35 to-transparent" />
       </motion.div>
 
-      {/* soft gold aura */}
-      <div className="pointer-events-none absolute -left-40 top-1/3 h-[480px] w-[480px] rounded-full bg-gold/[0.07] blur-[120px]" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-gold/25 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
 
-      <motion.div style={{ opacity: contentFade }} className="container-x relative z-10 pb-28 pt-40 md:pb-32">
+      <motion.div className="container-x relative z-10 pb-32 pt-44 md:pb-40">
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -54,7 +51,7 @@ export const Hero = () => {
           {hero.eyebrow}
         </motion.p>
 
-        <h1 className="mt-8 font-serif text-[clamp(2.9rem,8vw,5.75rem)] font-light leading-[1.04] tracking-[-0.02em] text-paper">
+        <h1 className="mt-8 font-serif text-[clamp(3rem,8vw,6rem)] font-light leading-[1.04] tracking-[-0.02em] text-paper">
           {hero.titleLines.map((line, i) => (
             <span key={i} className="block overflow-hidden pb-1">
               <motion.span className="block" {...lineAnim(i)}>
@@ -87,7 +84,7 @@ export const Hero = () => {
               e.preventDefault();
               scrollToSection(hero.primaryCta.href);
             }}
-            className="group inline-flex items-center gap-2.5 rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-ink transition-all duration-300 hover:bg-gold-light hover:shadow-[0_8px_40px_rgba(197,160,89,0.35)]"
+            className="group inline-flex items-center gap-2.5 rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-ink transition-colors duration-300 hover:bg-gold-light"
             data-testid="hero-primary-cta"
           >
             {hero.primaryCta.label}

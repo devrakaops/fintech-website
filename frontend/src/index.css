@@ -37,7 +37,7 @@
   }
 }
 .marquee-track {
-  animation: marquee 52s linear infinite;
+  animation: marquee 72s linear infinite;
   will-change: transform;
 }
 .marquee-track:hover {
@@ -72,7 +72,7 @@
   border-radius: 9px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #c5a059;
+  background: #3a3f4b;
 }
 
 @media (prefers-reduced-motion: reduce) {

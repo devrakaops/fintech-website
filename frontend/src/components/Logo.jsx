@@ -45,14 +45,14 @@ export const Logo = ({ dark = false, onClick }) => (
     className="flex items-center gap-3 group"
     data-testid="brand-logo"
   >
-    <LogoMark className="shrink-0 transition-transform duration-500 group-hover:rotate-[15deg]" />
+    <LogoMark className="shrink-0" />
     <span className="flex flex-col leading-none">
       <span
         className={`font-serif text-lg tracking-tight ${dark ? "text-ink" : "text-paper"}`}
       >
         {siteContent.brand.shortName}
       </span>
-      <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-gold mt-1">
+      <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-gold mt-0.5">
         Capital Advisors
       </span>
     </span>

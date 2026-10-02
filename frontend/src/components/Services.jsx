@@ -16,7 +16,7 @@ export const Services = () => {
   const { services } = siteContent;
 
   return (
-    <section id={services.id} className="bg-paper py-24 md:py-32" data-testid="services-section">
+    <section id={services.id} className="bg-paper py-28 md:py-36" data-testid="services-section">
       <div className="container-x">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <SectionHeading
@@ -47,11 +47,11 @@ export const Services = () => {
             return (
               <Reveal key={i} delay={(i % 3) * 0.1} className="h-full">
                 <div
-                  className="group h-full rounded-3xl border border-ink/[0.08] bg-paper-2 p-8 shadow-[0_2px_24px_rgba(12,14,18,0.03)] transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/40 hover:shadow-[0_18px_50px_rgba(160,126,59,0.12)]"
+                  className="group h-full rounded-2xl border border-ink/[0.08] bg-paper-2 p-8 transition-colors duration-500 hover:border-gold/40"
                   data-testid={`service-card-${i + 1}`}
                 >
                   <div className="flex items-start justify-between">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gold/[0.1] text-gold-dark transition-colors duration-500 group-hover:bg-gold group-hover:text-ink">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gold/[0.1] text-gold-dark transition-colors duration-500 group-hover:bg-gold/15">
                       <Icon className="h-5 w-5" strokeWidth={1.5} />
                     </span>
                     <span className="font-mono text-xs tracking-[0.2em] text-ink/30">
