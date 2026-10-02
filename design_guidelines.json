@@ -1,0 +1,189 @@
+{
+  "project_title": "Meridian Capital Advisors - Boutique Wealth Management Single-Page Website",
+  "archetype": "LUXURY & PRIVATE WEALTH MANAGEMENT (Apple-level simplicity meets editorial wealth advisory)",
+  "brand_configuration": {
+    "config_file_path": "/app/frontend/src/config/brandConfig.js",
+    "brand_name": "Meridian Capital Advisors",
+    "short_name": "Meridian",
+    "tagline": "Architects of Private Wealth & Precision Financial Counsel",
+    "founders": [
+      {
+        "name": "Aarav Vance",
+        "title": "Co-Founder & Managing Partner",
+        "credential": "FCA (Chartered Accountant), CFA",
+        "bio": "Over 18 years advising ultra-high-net-worth families, structuring complex cross-border holdings, and driving tax-efficient portfolio strategies.",
+        "image_url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBhZHZpc29yJTIwcG9ydHJhaXQlMjBleGVjdXRpdmUlMjB3ZWFsdGglMjBtYW5hZ2VtZW50fGVufDB8fHx8MTc5MDk1MDY5Mnww&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "name": "Elena Rostova",
+        "title": "Co-Founder & Senior Partner",
+        "credential": "MBA (Finance), Wealth Strategist",
+        "bio": "Former Senior Private Banker with deep expertise in multi-generational estate governance, bespoke private equity allocations, and liquidity planning.",
+        "image_url": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwyfHxmaW5hbmNpYWwlMjBhZHZpc29yJTIwcG9ydHJhaXQlMjBleGVjdXRpdmUlMjB3ZWFsdGglMjBtYW5hZ2VtZW50fGVufDB8fHx8MTc5MDk1MDY5Mnww&ixlib=rb-4.1.0&q=85"
+      }
+    ],
+    "contact": {
+      "whatsapp_number": "+15550192834",
+      "email": "private@meridianadvisors.com",
+      "phone": "+1 (800) 842-8839",
+      "office": "One Financial Tower, Suite 4200, New York, NY"
+    }
+  },
+  "colors": {
+    "dark_section": {
+      "bg": "#0C0E12",
+      "bg_card": "#151821",
+      "border": "rgba(212, 175, 55, 0.15)",
+      "text_primary": "#F7F7F6",
+      "text_muted": "#9CA3AF"
+    },
+    "light_section": {
+      "bg": "#F9F8F6",
+      "bg_card": "#FFFFFF",
+      "border": "rgba(12, 14, 18, 0.08)",
+      "text_primary": "#0C0E12",
+      "text_muted": "#52525B"
+    },
+    "accents": {
+      "champagne_gold": "#C5A059",
+      "champagne_gold_light": "#E5C889",
+      "gold_glow": "rgba(197, 160, 89, 0.2)",
+      "slate_dark": "#181A20"
+    }
+  },
+  "typography": {
+    "headline_font": "Fraunces, Playfair Display, serif",
+    "body_font": "Manrope, -apple-system, sans-serif",
+    "mono_font": "JetBrains Mono, monospace",
+    "scale": {
+      "hero_h1": "text-4xl sm:text-5xl md:text-6xl font-serif tracking-tight leading-[1.08]",
+      "section_h2": "text-2xl sm:text-3xl lg:text-4xl font-serif tracking-tight leading-tight",
+      "card_h3": "text-xl sm:text-2xl font-serif tracking-tight",
+      "body_text": "text-base sm:text-lg font-sans leading-relaxed",
+      "eyebrow_label": "text-xs font-mono uppercase tracking-[0.25em] text-[#C5A059]"
+    }
+  },
+  "layout_and_sections": [
+    {
+      "section_id": "header",
+      "type": "Sticky Compacting Navigation",
+      "bg_theme": "dark_glass",
+      "components": [
+        "Brand Logo with champagne dot mark",
+        "Navigation Links (About, Expertise, Approach, Services, Journey, Contact)",
+        "Compacting height & subtle border on scroll",
+        "Primary CTA Button 'Private Consultation'"
+      ]
+    },
+    {
+      "section_id": "hero",
+      "type": "Kinetic Dark Hero",
+      "bg_theme": "dark",
+      "components": [
+        "Eyebrow: BOUTIQUE WEALTH ADVISORY & CONSULTING",
+        "Line-by-line staggered reveal headline",
+        "Subheading with dual CA & Advisory expertise summary",
+        "Dual CTAs: 'Schedule Consultation' (WhatsApp trigger) and 'Explore Services'",
+        "Abstract subtle financial glow/geometry visual background",
+        "Quick Metrics Strip at bottom of hero"
+      ]
+    },
+    {
+      "section_id": "marquee",
+      "type": "Slow Editorial Marquee Band",
+      "bg_theme": "accent_dark",
+      "components": [
+        "Infinite slow scrolling ticker with gold separators: PRIVATE WEALTH MANAGEMENT • TAX ARCHITECTURE • MULTI-FAMILY GOVERNANCE • RISK MITIGATION • PORTFOLIO OPTIMIZATION • CA PRECISION"
+      ]
+    },
+    {
+      "section_id": "about",
+      "type": "About & Expertise Two-Column",
+      "bg_theme": "light",
+      "components": [
+        "Two-column layout: Left text & credentials + 3 Stat Cards ($1.2B+ Assets Advised, 99.4% Client Retention, 18+ Years Track Record)",
+        "Right tabbed or dual Advisor Portrait Cards (Aarav Vance FCA & Elena Rostova)",
+        "Interactive badge highlighting 'Chartered Accountant Founded & Led'"
+      ]
+    },
+    {
+      "section_id": "approach",
+      "type": "4-Step Pillar Framework (Numbered Cards)",
+      "bg_theme": "dark",
+      "components": [
+        "Card 01: Precision Audit & Risk Profiling",
+        "Card 02: Tax-Engineered Capital Structure",
+        "Card 03: Multi-Asset Bespoke Execution",
+        "Card 04: Continuous Family Office Governance"
+      ]
+    },
+    {
+      "section_id": "services",
+      "type": "6 Comprehensive Advisory Services Cards",
+      "bg_theme": "light",
+      "components": [
+        "01. Bespoke Portfolio Management",
+        "02. CA-Led Corporate & Personal Tax Strategy",
+        "03. Multi-Generational Estate & Succession",
+        "04. Private Equity & Alternative Investments",
+        "05. Cross-Border Wealth & Regulatory Compliance",
+        "06. Liquidity & Exit Advisory for Founders"
+      ]
+    },
+    {
+      "section_id": "journey",
+      "type": "Interactive Visual Journey (3 Stages)",
+      "bg_theme": "dark",
+      "components": [
+        "Stage 1: UNDERSTAND (Deep Financial Diagnostic)",
+        "Stage 2: PLAN (Strategic Wealth Blueprint)",
+        "Stage 3: GROW (Disciplined Execution & Governance)",
+        "Visual connector bar with step highlights & subtle parallax cards"
+      ]
+    },
+    {
+      "section_id": "contact",
+      "type": "Contact Methods & Interactive WhatsApp Enquiry Form",
+      "bg_theme": "light",
+      "components": [
+        "Direct Contact Cards: WhatsApp, Email, Direct Phone Line",
+        "Static Enquiry Form: Name, Email, Assets Tier Select, Message",
+        "Form submission builds pre-filled WhatsApp link & opens chat",
+        "Instant Toast notification via Sonner"
+      ]
+    },
+    {
+      "section_id": "footer",
+      "type": "Minimalist High-End Footer",
+      "bg_theme": "dark",
+      "components": [
+        "Massive Serif Brand Watermark background",
+        "Regulatory Disclaimer & CA Practice compliance note",
+        "Quick jump navigation & copyright"
+      ]
+    }
+  ],
+  "motion_and_interactions": {
+    "library": "framer-motion",
+    "timing": {
+      "stagger_children": 0.12,
+      "reveal_duration": 0.7,
+      "ease": [0.22, 1, 0.36, 1]
+    },
+    "rules": [
+      "Respect prefers-reduced-motion",
+      "Smooth scroll transitions with Lenis or CSS smooth scroll",
+      "Subtle hover elevation (-2px transform with champagne border highlight)"
+    ]
+  },
+  "testing_and_accessibility": {
+    "data_testid_requirement": "Mandatory on all interactive elements, buttons, nav links, form inputs, stat cards, and CTAs",
+    "contrast_standard": "APCA & WCAG AA minimum 4.5:1 for body, 3:1 for large display headers"
+  },
+  "image_urls": {
+    "founder_1": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBhZHZpc29yJTIwcG9ydHJhaXQlMjBleGVjdXRpdmUlMjB3ZWFsdGglMjBtYW5hZ2VtZW50fGVufDB8fHx8MTc5MDk1MDY5Mnww&ixlib=rb-4.1.0&q=85",
+    "founder_2": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwyfHxmaW5hbmNpYWwlMjBhZHZpc29yJTIwcG9ydHJhaXQlMjBleGVjdXRpdmUlMjB3ZWFsdGglMjBtYW5hZ2VtZW50fGVufDB8fHx8MTc5MDk1MDY5Mnww&ixlib=rb-4.1.0&q=85",
+    "architectural_bg": "https://images.unsplash.com/photo-1669843834173-2ba96d1b5bb9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwbHV4dXJ5JTIwYXJjaGl0ZWN0dXJhbCUyMGludGVyaW9yJTIwY2hhbXBhZ25lJTIwZ29sZCUyMHN0cnVjdHVyZXxlbnwwfHx8fDE3OTA5NTA2OTJ8MA&ixlib=rb-4.1.0&q=85",
+    "gold_abstract_texture": "https://images.unsplash.com/photo-1786840228948-9b955498e991?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwbHV4dXJ5JTIwYXJjaGl0ZWN0dXJhbCUyMGludGVyaW9yJTIwY2hhbXBhZ25lJTIwZ29sZCUyMHN0cnVjdHVyZXxlbnwwfHx8fDE3OTA5NTA2OTJ8MA&ixlib=rb-4.1.0&q=85"
+  }
+}
